@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 
+         some info
+         ---------
+        [1] link to keycode event: https://keycode.info/
+    -->
+
+    <!-- Title -->
+    <h1><a href="#">Simple Drum Kit</a></h1>
+    <h2>Pakai Keyboard untuk memainkan</h2>
+    <h2>Ganti Warna:</h2>
+    <div id="tema">
+        <button class="btn" data-i="0"></button>
+        <button class="btn" data-i="1"></button>
+        <button class="btn" data-i="2"></button>
+    </div>
+
+    <!-- untuk tampilan keyboad -->
+    <div class="keys">
+        <div data-key="65" class="tombol">
+            <kbd>A</kbd>
+            <span class="txtSound">clap</span>
+        </div>
+        <div data-key="83" class="tombol">
+            <kbd>S</kbd>
+            <span class="txtSound">hihat</span>
+        </div>
+        <div data-key="68" class="tombol">
+            <kbd>D</kbd>
+            <span class="txtSound">kick</span>
+        </div>
+        <div data-key="70" class="tombol">
+            <kbd>F</kbd>
+            <span class="txtSound">openhat</span>
+        </div>
+        <div data-key="71" class="tombol">
+            <kbd>G</kbd>
+            <span class="txtSound">boom</span>
+        </div>
+        <div data-key="72" class="tombol">
+            <kbd>H</kbd>
+            <span class="txtSound">ride</span>
+        </div>
+        <div data-key="74" class="tombol">
+            <kbd>J</kbd>
+            <span class="txtSound">snare</span>
+        </div>
+        <div data-key="75" class="tombol">
+            <kbd>K</kbd>
+            <span class="txtSound">tom</span>
+        </div>
+        <div data-key="76" class="tombol">
+            <kbd>L</kbd>
+            <span class="txtSound">tink</span>
+        </div>
+    </div>
+
+    <!-- untuk suara -->
+    <audio data-key="65" src="assets/sounds/clap.wav"></audio>
+    <audio data-key="83" src="assets/sounds/hihat.wav"></audio>
+    <audio data-key="68" src="assets/sounds/kick.wav"></audio>
+    <audio data-key="70" src="assets/sounds/openhat.wav"></audio>
+    <audio data-key="71" src="assets/sounds/boom.wav"></audio>
+    <audio data-key="72" src="assets/sounds/ride.wav"></audio>
+    <audio data-key="74" src="assets/sounds/snare.wav"></audio>
+    <audio data-key="75" src="assets/sounds/tom.wav"></audio>
+    <audio data-key="76" src="assets/sounds/tink.wav"></audio>
+
+    <!-- untuk js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

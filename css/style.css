@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+* {
+    font-size: 10px;
+    background-size: cover;
+}
+
+:root {
+    --main-color: #458fba;
+    --li-1: #4a99c7;
+    --li-2: #3e81a7;
+    --bs-1: #367091;
+    --bs-2: #54aee3;
+    --li-1k: #3e81a7;
+    --li-2k: #4a99c7;
+    --bs-1k: #367091;
+    --bs-2k: #54aee3;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: var(--main-color);
+}
+
+h1 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /*menengahkan horiozntal*/
+    align-items: center; /* menengahkan vertikal */
+    font-size: 8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: var(--main-color);
+    text-shadow:  -12px -12px 24px var(--bs-2), 12px 12px 24px var(--bs-1);
+}
+
+h2 {
+    text-decoration: none;
+    display: flex;
+    justify-content: center; /*menengahkan horiozntal*/
+    align-items: center; /* menengahkan vertikal */
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#tema {
+    display: flex;
+    justify-content: center; /*menengahkan horiozntal*/
+    align-items: center; /* menengahkan vertikal */
+}
+
+.btn:nth-child(1) {
+    background: linear-gradient(145deg, #4a99c7, #3e81a7);
+    box-shadow:  12px 12px 24px #367091, 
+                 -12px -12px 24px #54aee3;
+}
+
+.btn:nth-child(2) {
+    background: linear-gradient(145deg, #50cb8a, #44ab74);
+    box-shadow:  11px 11px 25px #388f61, 
+             -11px -11px 25px #5eeea1;
+}
+
+.btn:nth-child(3) {
+    background: linear-gradient(145deg, #df766e, #bb635d);
+    box-shadow:  11px 11px 25px #9c534d, 
+             -11px -11px 25px #ff8a81;
+}
+
+.btn {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.keys {
+    display: flex;
+    justify-content: center; /*menengahkan horiozntal*/
+    align-items: center; /* menengahkan vertikal */
+    height: calc(100vh - 309.1px); /* vh = view heigth (tergantung windows browser) dikurangi header dan subtitle dan button */
+}
+
+.tombol {
+    width: 10rem;
+    padding: 1rem .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+    transition: all .09s ease;
+    text-align: center;
+    color: white;
+    border-radius: 19px;
+    background: linear-gradient(145deg, var(--li-1), var(--li-2));
+    box-shadow:  12px 12px 24px var(--bs-1), 
+                -12px -12px 24px var(--bs-2);
+}
+
+.tombol:hover {
+    background: var(--main-color);
+}
+
+.bunyi {
+    transform: scale(0.9);
+    border-radius: 19px;
+    background: linear-gradient(145deg, var(--li-1k), var(--li-2k));
+    box-shadow:  12px 12px 24px var(--bs-1k), 
+             -12px -12px 24px var(--bs-2k);
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.txtSound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: white;
+}
